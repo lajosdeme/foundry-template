@@ -22,3 +22,10 @@ test:
 
 audit:
 	aderyn && slither .
+
+create:
+	@if [ -z "$(name)" ]; then \
+		echo "Usage: make create name=<filename>"; \
+		exit 1; \
+	fi
+	@./create.sh "$(name)"
