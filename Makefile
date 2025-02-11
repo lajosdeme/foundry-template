@@ -6,7 +6,7 @@ remove:
 	rm -rf .gitmodules && rm -rf .git/modules && rm -rf lib && touch .gitmodules 
 
 install:
-	forge install foundry-rs/forge-std --no-commit && forge install openzeppelin/openzeppelin-contracts@ --no-commit
+	forge install foundry-rs/forge-std --no-commit && forge install openzeppelin/openzeppelin-contracts --no-commit
 
 build:
 	forge build
