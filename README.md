@@ -39,10 +39,10 @@ You will need Foundry to get started. If you don't have it installed already, ch
 
 ## Features
 ### Testing Helpers:
-Includes a `Helper.sol` contract with common testing utilities such as creating users with inital balances and quickly forking blockchains at specific block numbers, selecting and switching between different forks.
+Includes a `Helper.sol` contract with common testing utilities such as creating users with initial balances and quickly forking blockchains at specific block numbers, selecting and switching between different forks.
 
 ### Contract Creation Script:
-Includes a bash script that is useful for creating new smart contracts. It automatically sets up boilerplate for the contract (such as SPDX identifier, pragma version), and creates a `<contract_name>.t.sol` file in the `/test` folder and a `Deploy<contract_name>.s.sol` file in the `/script` folder.
+Includes a bash script that is useful for creating new smart contracts. It automatically sets up boilerplate for the contract (such as SPDX identifier, and pragma version), and creates a `<contract_name>.t.sol` file in the `/test` folder and a `Deploy<contract_name>.s.sol` file in the `/script` folder.
 
 You can create your contracts this way:
 ```bash
@@ -64,7 +64,7 @@ You can edit the CI script in [.github/workflows/test.yml](./.github/workflows/t
 Including `.gitignore`, `.vscode`, `remappings.txt`
 
 ### Audit helpers
-You can run `make audit` to run the Slither staic analyzer and the Aderyn audit tool (you have to install them first on your system).
+You can run `make audit` to run the Slither static analyzer and the Aderyn audit tool (you have to install them first on your system).
 
 ## Acknowledgement
 Inspired by:
