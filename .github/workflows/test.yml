@@ -39,5 +39,10 @@ jobs:
 
       - name: Run Forge tests
         run: |
-          forge test -vvv
+          if ls test/*.t.sol 1> /dev/null 2>&1; then
+            echo "Found .t.sol files in the test folder. Running tests..."
+            forge test -vvv
+          else
+            echo "No .t.sol files found in the test folder. Skipping tests."
+          fi
         id: test
