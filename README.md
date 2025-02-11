@@ -3,7 +3,7 @@
 [gitpod]: https://gitpod.io/#https://github.com/lajopsdeme/foundry-template
 [gitpod-badge]: https://img.shields.io/badge/Gitpod-Open%20in%20Gitpod-FFB45B?logo=gitpod
 [gha]: https://github.com/lajosdeme/foundry-template/actions
-[gha-badge]: https://github.com/lajosdeme/foundry-template/actions/workflows/ci.yml/badge.svg
+[gha-badge]: https://github.com/lajosdeme/foundry-template/actions/workflows/test.yml/badge.svg
 [foundry]: https://getfoundry.sh/
 [foundry-badge]: https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg
 [license]: https://opensource.org/licenses/MIT
