@@ -32,9 +32,9 @@ jobs:
           forge fmt --check
         id: fmt
 
-      - name: Run Forge build
+      - name: Run custom build command
         run: |
-          forge build --sizes
+          make all
         id: build
 
       - name: Run Forge tests

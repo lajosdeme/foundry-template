@@ -15,7 +15,7 @@ abstract contract Helper is Test {
         BASE
     }
 
-    mapping (Forks forkedChain => uint256 forkId) forkIds;
+    mapping(Forks forkedChain => uint256 forkId) forkIds;
 
     constructor() {
         Users helper = new Users();
@@ -33,7 +33,7 @@ abstract contract Helper is Test {
         vm.warp(timestamp);
     }
 
-    // ======= CREATE FORKS ======= 
+    // ======= CREATE FORKS =======
     function forkMainnet() internal {
         uint256 _forkId = vm.createFork(vm.envString("MAINNET_RPC_URL"));
         forkIds[Forks.MAINNET] = _forkId;
